@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:rs="http://ws.unisoft/FNSNDSCAWS2/Response" xmlns:wsp1="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:rq="http://ws.unisoft/FNSNDSCAWS2/Request" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.unisoft" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://ws.unisoft" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Веб-сервис проверки ИНН КПП контрагента по ФБД ЕГРН</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://ws.unisoft">
+      <xs:import schemaLocation="http://npchk.nalog.ru:80/FNSNDSCAWS_2?xsd=1" namespace="http://ws.unisoft/FNSNDSCAWS2/Request" />
+      <xs:import schemaLocation="http://npchk.nalog.ru:80/FNSNDSCAWS_2?xsd=2" namespace="http://ws.unisoft/FNSNDSCAWS2/Response" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="NdsRequest2">
+    <wsdl:part name="np_in" element="rq:NdsRequest2" />
+  </wsdl:message>
+  <wsdl:message name="NdsResponse2">
+    <wsdl:part name="np_out" element="rs:NdsResponse2" />
+  </wsdl:message>
+  <wsdl:portType name="FNSNDSCAWS2_Port">
+    <wsdl:operation name="NdsRequest2">
+      <wsdl:input message="tns:NdsRequest2" />
+      <wsdl:output message="tns:NdsResponse2" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FNSNDSCAWS2Binding" type="tns:FNSNDSCAWS2_Port">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NdsRequest2">
+      <soap:operation soapAction="NdsRequest2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FNSNDSCAWS2">
+    <wsdl:port name="FNSNDSCAWS2_Port" binding="tns:FNSNDSCAWS2Binding">
+      <soap:address location="http://npchk.nalog.ru:80/FNSNDSCAWS_2" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

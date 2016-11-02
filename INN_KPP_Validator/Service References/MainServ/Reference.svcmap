@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c856a2e0-7734-4d77-8887-a2670163c444" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\ГисЖКХ\SHEMES\hcs_wsdl_xsd_v.9.0.2.1\hcs-house-management-service-async-9.0.2.1.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="hcs-house-management-service-async-9.wsdl" MetadataType="Wsdl" ID="d6e9bd2e-0ac5-40a1-a531-56bf55832384" SourceId="1" SourceUrl="file:///D:/ГисЖКХ/SHEMES/hcs_wsdl_xsd_v.9.0.2.1/hcs-house-management-service-async-9.0.2.1.wsdl" />
+    <MetadataFile FileName="hcs-basetypes-9.xsd" MetadataType="Schema" ID="0af7c5ae-2d48-4a65-b8e7-819f39f96439" SourceId="1" SourceUrl="file:///D:/ГисЖКХ/SHEMES/hcs_wsdl_xsd_v.9.0.2.1/hcs-basetypes-9.0.2.1.xsd" />
+    <MetadataFile FileName="hcs-house-management-types-9.xsd" MetadataType="Schema" ID="65e4585f-e036-4409-b816-a0bd1dad0c05" SourceId="1" SourceUrl="file:///D:/ГисЖКХ/SHEMES/hcs_wsdl_xsd_v.9.0.2.1/hcs-house-management-types-9.0.1.4.xsd" />
+    <MetadataFile FileName="xmldsig-core-schema.xsd" MetadataType="Schema" ID="37952849-814d-4b2d-a065-de5defd650f7" SourceId="1" SourceUrl="file:///D:/ГисЖКХ/SHEMES/hcs_wsdl_xsd_v.9.0.2.1/xmldsig-core-schema.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

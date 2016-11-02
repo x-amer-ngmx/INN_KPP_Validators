@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.unisoft/FNSNDSCAWS2/Request" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://ws.unisoft/FNSNDSCAWS2/Request" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ДатаТип">
+    <xs:annotation>
+      <xs:documentation>Дата в формате ДД.ММ.ГГГГ (01.01.1800 - 31.12.2099)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="ИННТип">
+    <xs:annotation>
+      <xs:documentation>Идентификационный номер налогоплательщика</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:simpleType name="КППТип">
+    <xs:annotation>
+      <xs:documentation>Код причины постановки на учет (КПП)</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string" />
+  </xs:simpleType>
+  <xs:element name="NdsRequest2">
+    <xs:annotation>
+      <xs:documentation>Запрос о контрагентах</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="10000" name="NP">
+          <xs:annotation>
+            <xs:documentation>Сведения о контрагенте</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:attribute name="INN" type="tns:ИННТип" use="required">
+              <xs:annotation>
+                <xs:documentation>ИНН</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="KPP" type="tns:КППТип" use="optional">
+              <xs:annotation>
+                <xs:documentation>КПП</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="DT" type="tns:ДатаТип" use="optional">
+              <xs:annotation>
+                <xs:documentation>Дата, на которую запрашиваются сведения</xs:documentation>
+              </xs:annotation>
+            </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configurationSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:xml-wcfconfigurationsnapshot">
+  <behaviors />
+  <bindings>
+    <binding digest="System.ServiceModel.Configuration.BasicHttpBindingElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089:&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data name=&quot;FNSNDSCAWS2Binding&quot; /&gt;" bindingType="basicHttpBinding" name="FNSNDSCAWS2Binding" />
+  </bindings>
+  <endpoints>
+    <endpoint normalizedDigest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://npchk.nalog.ru:80/FNSNDSCAWS_2&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;FNSNDSCAWS2Binding&quot; contract=&quot;NalogService.FNSNDSCAWS2_Port&quot; name=&quot;FNSNDSCAWS2_Port&quot; /&gt;" digest="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-16&quot;?&gt;&lt;Data address=&quot;http://npchk.nalog.ru:80/FNSNDSCAWS_2&quot; binding=&quot;basicHttpBinding&quot; bindingConfiguration=&quot;FNSNDSCAWS2Binding&quot; contract=&quot;NalogService.FNSNDSCAWS2_Port&quot; name=&quot;FNSNDSCAWS2_Port&quot; /&gt;" contractName="NalogService.FNSNDSCAWS2_Port" name="FNSNDSCAWS2_Port" />
+  </endpoints>
+</configurationSnapshot>
